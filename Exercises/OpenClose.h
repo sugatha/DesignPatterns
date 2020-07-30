@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Header.h"
+#include "Common.h"
 
 /* Concept - open for extension, close for modification */
 

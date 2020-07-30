@@ -23,9 +23,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="propertry.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -33,6 +30,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LiskovSubstitution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceSegregation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DependencyInversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Unique_ptr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shared_Ptr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

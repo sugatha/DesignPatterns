@@ -145,10 +145,14 @@
     <ClCompile Include="SingleResponsibility.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Header.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="DependencyInversion.h" />
+    <ClInclude Include="InterfaceSegregation.h" />
     <ClInclude Include="LiskovSubstitution.h" />
     <ClInclude Include="OpenClose.h" />
     <ClInclude Include="propertry.h" />
+    <ClInclude Include="Shared_Ptr.h" />
+    <ClInclude Include="Unique_ptr.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

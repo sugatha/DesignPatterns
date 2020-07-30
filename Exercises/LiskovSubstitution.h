@@ -1,6 +1,11 @@
 #pragma once
 
-#include "Header.h"
+#include "Common.h"
+/* 
+Here this isnt the best of ways to solve, as it beats the LSP 
+meaning the square shouldnt actually be implemented this way
+better way is to implement it as a classfactory
+*/
 
 class Rectangle
 {
