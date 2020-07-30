@@ -82,16 +82,24 @@ int main()
 
 	/* Liskov Substitition principle */
 	{
-		Rectangle r(3,4);
-		process( r);
+		Rectangle rect(3,4);
+		process(rect);
+
+		/* Oops! fails for a square */
+		Square sq(3);
+		process(sq);
 	}
 
 }
 
-
 void process(Rectangle& r)
 {
+	int h = r.get_height();
 	int w = r.get_width();
-	r.set_height(10);
-	cout << "expected area = " << (w * 10)	<< ", got " << r.area() << endl;
+	/* increase the height of the rectangle by 200% */
+	r.set_height(h * 2);
+	cout	<< "expected area after increasing the height by 200% = " << (w* h * 2)	
+			<< " h =" << r.get_height()
+			<< " w = "<<r.get_width() 
+			<< ", got " << r.area() << endl;
 }
