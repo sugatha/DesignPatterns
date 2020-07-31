@@ -149,6 +149,7 @@
     <ClInclude Include="DependencyInversion.h" />
     <ClInclude Include="InterfaceSegregation.h" />
     <ClInclude Include="LiskovSubstitution.h" />
+    <ClInclude Include="ObjectReturn.h" />
     <ClInclude Include="OpenClose.h" />
     <ClInclude Include="propertry.h" />
     <ClInclude Include="Shared_Ptr.h" />

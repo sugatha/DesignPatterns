@@ -6,6 +6,8 @@
 #include "LiskovSubstitution.h"
 #include "Unique_ptr.h"
 #include "Shared_Ptr.h"
+#include "DependencyInversion.h"
+#include "ObjectReturn.h"
 
 /*Forward declarations */
 void process(Rectangle& r);
@@ -125,6 +127,15 @@ int main()
 		
 		cout << "All threads completed, the last one deleted Derived\n";
 	}
+
+	/*Dependency Inversion */
+	{
+		auto injector = di::make_injector(di::bind<ILogger>().to<ConsoleLogger>());
+	}
+
+	/*Returning objects */	
+	Foo f = make_foo(2);
+
 }
 
 void process(Rectangle& r)
