@@ -16,6 +16,15 @@
     <Filter Include="Creational">
       <UniqueIdentifier>{e50a0836-7682-47d4-ab2e-7b5b72f9a771}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Templates">
+      <UniqueIdentifier>{ac524667-3f0a-4963-9e23-7ef06294a079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Templates\Function">
+      <UniqueIdentifier>{282eec88-6b19-429e-8101-c4b847c5a6d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Templates\Class">
+      <UniqueIdentifier>{8d226220-8c47-4f85-a804-807f9243be5f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exercises.cpp">
@@ -52,6 +61,9 @@
     </ClInclude>
     <ClInclude Include="ObjectReturn.h">
       <Filter>Creational</Filter>
+    </ClInclude>
+    <ClInclude Include="FuncTemplate.h">
+      <Filter>Templates\Function</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

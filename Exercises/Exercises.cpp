@@ -1,5 +1,7 @@
 // Exercises.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+
+// Basic Principles
 #include "propertry.h"
 #include "SingleResponsibility.h"
 #include "OpenClose.h"
@@ -9,13 +11,17 @@
 #include "DependencyInversion.h"
 #include "ObjectReturn.h"
 
+// Function Templates
+#include "FuncTemplate.h"
+
+
 /*Forward declarations */
 void process(Rectangle& r);
 
 int main()
 {
 	Person perObj;
-	perObj.age = 13;
+	perObj.age = 14;
 	perObj.name = "mimmi";
 	cout << perObj.name <<" is " << perObj.age << "yrs old."<<endl;	
 
@@ -134,8 +140,31 @@ int main()
 	}
 
 	/*Returning objects */	
-	Foo f = make_foo(2);
+	unique_ptr<Foo> f = make_foo(2);
 
+	/* Function Templates */
+	{
+		int val1 = 3,
+			val2 = 2;
+
+		int result = findmax(val1, val2);
+
+		string str1 = "mimmi",
+			str2 = "shraddha";
+
+		string strresult = findmax(str1,str2);
+
+		Person p1, p2, presult;
+		p1.age = 14;
+		p1.name = "mimmi";
+		p2.age = 14;
+		p2.name = "shraddha";
+
+		presult = findmax(p1,p2);
+
+		cout << "max of " << val1 << " & " << val2 << " is " << result << endl;
+		cout << "max of " << str1 << " & " << str2 << " is " << strresult << endl;
+	}
 }
 
 void process(Rectangle& r)
